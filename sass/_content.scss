@@ -1,0 +1,101 @@
+
+.line {
+    color: #8E9191;
+    position: relative;
+    &.event {
+        font-family: "Brandon Grotesque";
+        font-weight: 300;
+        margin-left: 0;
+        margin-right: 0;
+        .message {
+            color: #555;
+            font-size: 0.85em;
+            padding-left: 10.5882em !important;
+            padding-right: 7.0588em !important;
+            @mixin joinpart {
+                font-size: 1.2em;
+                letter-spacing: 1px;
+                opacity: 0.6;
+            }
+            &[type*=join] {
+                &:before {
+                    content: "+++";
+                    @include joinpart;
+                    color: #b5bd68;
+                }
+            }
+            &[type*=kick],
+            &[type*=part],
+            &[type*=quit] {
+                &:before {
+                    content: "−−−";
+                    color: #cc6666;
+                    @include joinpart;
+                }
+            }
+        }
+    }
+
+    &>p {
+        margin: 0;
+        padding: 3px 0;
+        position: relative;
+        line-height: 1.4em;
+    }
+
+    .time, .message, .sender {
+        display: block;
+    }
+
+    .time {
+        width: 5em;
+        position: absolute;
+        right: 0;
+        top: .3em;
+        font-size: .75em;
+        line-height: 1.8666em;
+        float: right;
+        opacity: .5;
+        color: #71736F;
+        text-align: right;
+        margin-right: 1em;
+        @include transition(all 0.3s ease-out);
+    }
+
+    &:hover .time {
+        opacity: 1;
+    }
+
+    .message {
+        padding-left: 9em;
+        padding-right: 6em;
+        color: #aaa;
+        .sender {
+            position: absolute;
+            left: 0;
+            width: 8em;
+            text-align: right;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    &[type*=notice],
+    &[type*=ctcp],
+    &[type*=wallops] {
+        color: red;
+        opacity: 0.6;
+    }
+
+    &[type*=action] {
+        .sender:before {
+            content: "➼ ";
+            display: inline;
+        }
+
+    }
+
+    &[highlight=true] {
+        background-color: #393939;
+    }
+}

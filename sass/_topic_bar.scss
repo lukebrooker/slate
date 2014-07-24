@@ -1,0 +1,19 @@
+/* Topic Bar */
+
+#topic_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: .8; /* Set by JavaScript */
+    z-index: 400;
+    border-bottom: none;
+    color: #aaa;
+    padding: 0.5em 1em;
+    font-family: "Brandon Grotesque" !important;
+    font-weight: 300;
+    font-size: .8em;
+    background: #333;
+    text-align: center;
+    @include box-shadow(0 10px 30px #222);
+}

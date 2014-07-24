@@ -1,0 +1,12 @@
+/* Links */
+
+a {
+    color: #7aa6da;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    @include transition(all 200ms ease-out);
+    &:hover {
+        color: #bbdaff;
+        border-bottom-color: #bbdaff;
+    }
+}
