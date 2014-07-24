@@ -38,8 +38,8 @@ Here you go:
 
 It depends if you have a sandboxed build of Textual. Check out the theme folder to the relevant location:
 
-* Sandboxed: ~/Library/Containers/com.codeux.irc.textual/Data/Library/Application Support/Textual IRC/Styles/sartorial
-* Non-sandboxed: ~/Library/Application Support/Textual IRC/Styles/sartorial
+* Sandboxed: ~/Library/Containers/com.codeux.irc.textual/Data/Library/Application Support/Textual IRC/Styles/slate
+* Non-sandboxed: ~/Library/Application Support/Textual IRC/Styles/slate
 
 ## Hacking?
 
