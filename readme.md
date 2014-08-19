@@ -17,8 +17,8 @@ Srsly, the Appstore 2.1.0 version will not work with this theme.
 
 * It's dark.
 * Nice colors! (Mostly appropriated from Chris Kempson's [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme)).
-* Sensible typography courtesy of Adobe's Source family. Monospaced Source Code for the body content, proportional Source Sans for other bits. See the "Fonts" section below for more instructions.
-* Timestamps are on the right, but only show up when you hover, to reduce visual clutter
+* Sensible typography courtesy of Brandon Grotesque
+* Timestamps are faded on the right, but show up brighter when you hover, to reduce visual clutter
 
 ## Fonts?
 
